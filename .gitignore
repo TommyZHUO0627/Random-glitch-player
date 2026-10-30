@@ -1,0 +1,23 @@
+# Keep personal music out of version control.
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.ogg
+*.oga
+*.flac
+*.opus
+*.aif
+*.aiff
+*.wma
+*.alac
+*.mp4
+*.webm
+*.m4b
+music/
+audio/
+recordings/
+
+.DS_Store
+Thumbs.db
+Desktop.ini
