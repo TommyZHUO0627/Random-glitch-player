@@ -1,6 +1,6 @@
 # BUFFER / LOOP · Random Glitch Music Player
 
-[中文说明](README.md)
+[中文说明](README.md) · [Français](README.fr.md)
 
 Turn a stalled stream into a happy accident. Load a local track, randomly loop the audio you just heard, then return to the song. A self-contained static player with no dependencies or build step.
 
@@ -19,9 +19,9 @@ Includes pause, seeking, volume, a spectrum display and a glitch log. Keyboard s
 
 ## Languages
 
-The first visit uses your browser's preferred language: Chinese locales show Simplified Chinese; other locales show English. Switch with **中文 / English** at the top of the page. The introduction, controls, hints, status and logs all change without interrupting playback.
+The first visit uses your browser's preferred language: Chinese locales show Simplified Chinese, French locales show French, and other locales show English. Switch with **中文 / English / Français** at the top of the page. The introduction, controls, hints, status and logs all change without interrupting playback.
 
-The choice is kept in the URL fragment, without cookies or browser storage. Share `index.html#lang=en` or `index.html#lang=zh` to select a language explicitly. On GitHub Pages, append `#lang=en` or `#lang=zh` to your site's URL. All translations are bundled and work offline.
+The choice is kept in the URL fragment, without cookies or browser storage. Share `index.html#lang=en` or `index.html#lang=zh` (French: `index.html#lang=fr`) to select a language explicitly. On GitHub Pages, append `#lang=en` or `#lang=zh` to your site's URL. All translations are bundled and work offline.
 
 ## Local audio and privacy
 
@@ -36,7 +36,7 @@ The bundled content security policy blocks network connections with `connect-src
 This project is ready to publish; no repository has been created or pushed, and no live site has been deployed.
 
 1. Create a GitHub repository, for example `random-glitch-player`.
-2. Upload this folder's **contents** to the repository root, including both HTML files, both READMEs, `LICENSE`, `.gitignore` and `.nojekyll`. Make sure `index.html` is at the root.
+2. Upload this folder's **contents** to the repository root, including both HTML files, all three READMEs, `LICENSE`, `.gitignore` and `.nojekyll`. Make sure `index.html` is at the root.
 3. Go to **Settings → Pages → Build and deployment → Source → Deploy from a branch**.
 4. Select your branch (usually `main`) and **/(root)**, then click **Save**.
 5. When deployment finishes, open the link shown in Pages settings. It typically looks like `https://YOUR-USERNAME.github.io/random-glitch-player/`.
@@ -65,3 +65,5 @@ Checked in headless Edge on Windows using a generated 12-second WAV: decoding, p
 Also checked language detection, switching languages while playing, preservation of file names and parameter values, translated logs, language selection after reload and the English layout at a 390-pixel viewport. This does not cover every browser, codec or mobile device, and is not a listening test.
 
 To inspect local processing yourself, clear the browser developer tools' Network panel, import a song and play it. There should be no audio upload requests. Distinguish the initial webpage request on GitHub Pages from audio processing. The local HTML also works with the network disconnected.
+
+French language detection, switching among all three languages during playback, translated glitch logs, the language choice after reload and the French mobile layout were also checked.
