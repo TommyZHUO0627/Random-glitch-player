@@ -1,14 +1,14 @@
 # BUFFER / LOOP · 随机故障音乐播放器
 
-[English README](README.en.md)
+[English README](README.en.md) · [Français](README.fr.md)
 
 导入本地歌曲，随机重复刚播放过的片段，模拟网络卡顿形成的意外节奏。纯静态、单文件、无依赖，无需安装或构建。
 
-## 中文 / English 界面
+## 中文 / English / Français 界面
 
-首次打开会根据浏览器的首选语言显示界面：中文（包括 大陆地区、港澳台地区）显示简体中文，其余语言显示英文。页面右上角可随时点击「中文 / English」，介绍、按钮、说明、播放状态及日志会一起切换，不中断音乐播放。
+首次打开会根据浏览器的首选语言显示界面：中文（包括 大陆及港澳台地区）显示简体中文，法语（包括 fr-FR、fr-CA）显示法文，其余语言显示英文。页面右上角可随时点击「中文 / English / Français」，介绍、按钮、说明、播放状态及日志会一起切换，不中断音乐播放。
 
-选择的语言保留在当前网址末尾，不使用 Cookie 或浏览器存储。可以分享固定语言的链接，例如 `index.html#lang=zh`、`index.html#lang=en`；GitHub Pages 的首页链接也可以直接加 `#lang=en`。翻译全部包含在 HTML 中，离线可用。
+选择的语言保留在当前网址末尾，不使用 Cookie 或浏览器存储。可以分享固定语言的链接，例如 `index.html#lang=zh`、`index.html#lang=en`、`index.html#lang=fr`；GitHub Pages 的首页链接也可以直接加 `#lang=en`。翻译全部包含在 HTML 中，离线可用。
 
 ## 在电脑上播放
 
@@ -40,7 +40,7 @@
 项目已准备好，但没有创建仓库、推送提交或启用 Pages。
 
 1. 在 GitHub 新建仓库，例如 `random-glitch-player`。
-2. 将本目录中的文件上传到仓库根目录，包含 `index.html`、`random_glitch_player.html`、`README.md`、`README.en.md`、`LICENSE`、`.gitignore` 和 `.nojekyll`。不要把外层文件夹作为唯一目录上传，否则首页不在根目录。
+2. 将本目录中的文件上传到仓库根目录，包含 `index.html`、`random_glitch_player.html`、`README.md`、`README.en.md`、`README.fr.md`、`LICENSE`、`.gitignore` 和 `.nojekyll`。不要把外层文件夹作为唯一目录上传，否则首页不在根目录。
 3. 选择 **Settings → Pages → Build and deployment → Source → Deploy from a branch**。
 4. 选择保存文件的分支（通常为 `main`）及 **/(root)**，点击 **Save**。
 5. 等部署完成，在 Pages 设置页打开生成的链接。通常形如 `https://你的用户名.github.io/random-glitch-player/`。
@@ -69,3 +69,6 @@
 整理版本已在 Windows 的 Edge 无界面浏览器中用生成的 12 秒 WAV 检查：实际解码、播放暂停、手动和自动卡顿、自动及手动恢复、拖动进度、连续选歌、无效文件后重新导入、歌曲结束及重新播放。未出现页面脚本异常，页面请求仅有本地 HTML；另检查了 390 像素视口下的布局。未对所有浏览器、编码格式和移动设备进行实机听感测试。
 
 双语版另外检查了浏览器中英文首选语言识别、播放期间切换语言、文件名及参数保留、日志翻译、网址语言选择在刷新后保留，以及英文手机宽度布局。
+
+法文版另外检查了法语首选语言识别、三语切换、播放中切换及故障日志翻译、刷新后的语言保留，以及法文手机宽度布局。
+
